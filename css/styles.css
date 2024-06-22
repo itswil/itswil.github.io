@@ -19,8 +19,14 @@ main {
 
 .content {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 600px;
   padding: 0 1.5rem;
+
+  @media (orientation: landscape) {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+  }
 }
 
 section {
@@ -74,11 +80,24 @@ header {
 .screenshot {
   border-radius: 2rem;
   height: auto;
+  display: block;
+  margin: 0 auto;
+  max-width: 40vh;
   width: 100%;
+
+  @media (orientation: landscape) {
+    height: auto;
+    max-width: none;
+    width: 50vh;
+  }
 }
 
 .detail {
   margin: 1.5rem 0 0;
+
+  @media (orientation: landscape) {
+    margin: 1.5rem;
+  }
 }
 
 .section-heading {
