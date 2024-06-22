@@ -13,8 +13,6 @@ body {
 
 main {
   height: 100svh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
   position: relative;
 }
 
@@ -42,9 +40,7 @@ header {
 section {
   align-items: center;
   display: flex;
-  height: 100svh;
-  scroll-snap-align: start;
-  width: 100svw;
+  height: 100%;
 }
 
 .logo-wrap {
