@@ -6,6 +6,11 @@
   --color-text-hover: oklch(80% 0.13 170); 
 }
 
+html, body {
+  height: 100vh;
+  position: fixed;
+}
+
 body {
   color: var(--color-text);
   font-family: 'Inter', sans-serif;
